@@ -1369,6 +1369,16 @@ client.on('guildCreate', guild => {
         console.log(`許可されたサーバーに追加されました: ${guild.name} (ID: ${guild.id})`);
     }
 });
+
+process.on("uncaughtException", (error) => {
+  console.error("未処理の例外:", error);
+  fs.appendFileSync("error.log", `未処理の例外: ${error.stack}\n`);
+});
+
+process.on("unhandledRejection", (reason, promise) => {
+  console.error("未処理の拒否:", reason);
+  fs.appendFileSync("error.log", `未処理の拒否: ${reason}\n`);
+});
 //ここまで
 
 client.login(process.env.DISCORD_TOKEN);
