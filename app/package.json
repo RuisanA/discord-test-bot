@@ -18,7 +18,8 @@
     "discord.js-akinator-jp": "^1.0.1",
     "paypay.js": "^1.1.2",
     "discordjs-button-embed-pagination": "^4.x",
-    "moment": "^2.29.4"
+    "moment": "^2.29.4",
+    "express": "^5.1.0"
   },
   "engines": {
     "node": "16.x"
