@@ -38,6 +38,7 @@ const moment = require('moment');
 const Discord = require("discord.js");
 const ClientId = '1098536632161947658'
 dotenv.config();
+const server = require('./server.js')
 
 const admin_list = ["983317416283086909"]
 
