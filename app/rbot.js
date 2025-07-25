@@ -1156,7 +1156,7 @@ client.on('interactionCreate', async (interaction) => {
     const embed = new MessageEmbed()
     .setTitle("対応状況")
     .setDescription("現在対応可能です")
-.setImage("https://media.discordapp.net/attachments/1133014806966849671/1177633578478223461/1700840113611.png?ex=657337bc&is=6560c2bc&hm=9351a9c177a1d9c9dede6f6a&=&width=680&height=680")
+.setImage("https://aserora.net/maru.png")
     .setColor("GREEN")
     interaction.reply({ embeds: [ embed ], components: [ newbutton([ { id: "switch", emoji: "🔔" } ]) ] })
      }
