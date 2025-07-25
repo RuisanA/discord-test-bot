@@ -175,7 +175,7 @@ client.on('interactionCreate', async interaction => {
     const embed = new MessageEmbed()
     .setDescription(`配布パネル`)
     .setAuthor('R SERVER 配布サービス','https://media.discordapp.net/attachments/1125145598199353374/1133005242825445396/download.png?width=512&height=512')
-    .setImage("https://aserora.net/Beige%20And%20Brown%20Cocktail%20Menu.png")
+    .setImage("https://aserora.net/distribution.png")
     .setColor("RANDOM")
     .setTimestamp()
   const button1 = new MessageButton()
@@ -222,7 +222,7 @@ client.on('interactionCreate', async interaction => {
     const embed = new MessageEmbed()
       .setDescription(`配布パネル`)
       .setAuthor('R SERVER 配布サービス', 'https://media.discordapp.net/attachments/1125145598199353374/1133005242825445396/download.png?width=512&height=512')
-      .setImage("https://media.discordapp.net/attachments/1133014806966849671/1177625804344144003/image.png?ex=6573307e&is=6560bb7e&hm=d706cf0735407f9897cb87e37144c837308e1d3226df671ef198d99ae41710c2&=&format=webp&quality=lossless&width=750&height=1060")
+      .setImage("https://aserora.net/distribution.png")
       .setColor("RANDOM")
       .setTimestamp();
 
