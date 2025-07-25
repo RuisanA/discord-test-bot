@@ -1,3 +1,4 @@
+const http = require("http");
 const { Client, Intents, VoiceStateManager , Permissions, MessageAttachment,　MessageEmbed, MessageActionRow, MessageButton,　Guild, GuildMember, ApplicationCommandOptionType, MessageMentions, MessageSelectMenu, MessageActionRowOptions, MessageSelectMenuOptions} = require("discord.js");
 const { REST } = require('@discordjs/rest');
 const { Pagination } = require("discordjs-button-embed-pagination");
@@ -42,6 +43,19 @@ dotenv.config();
 
 const express = require("express");
 const app = express();
+
+http
+  .createServer(function (request, response) {
+    try {
+      response.writeHead(200, { "Content-Type": "text/plain;charset=utf-8" });
+      response.end(
+        `ログイン`
+      );
+    } catch (e) {
+      console.log(e);
+    }
+  })
+  .listen(8080);
 
 const admin_list = ["983317416283086909"]
 
