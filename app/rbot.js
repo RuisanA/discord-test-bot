@@ -30,6 +30,7 @@ const { Routes } = require('discord-api-types/v9');
 const { clientId,token } = require('./config.json');
 const { adminid } = require('./config.json');
 const { readdirSync } = require('fs');
+const fs = require("fs");
 const ms = require("ms");
 const { join } = require('path');
 const akinator = require("discord.js-akinator");
