@@ -1366,19 +1366,6 @@ client.on('interactionCreate', async interaction => {
       console.log(`発行user: ${interaction.user.tag}`)
 }
 });
-  
-const ALLOWED_GUILD_ID = '1133014804517367879'; // ボットが残ることが許可されているサーバーID
-
-client.on('guildCreate', guild => {
-    if (guild.id !== ALLOWED_GUILD_ID) {
-        console.log(`許可されていないサーバーに追加されました: ${guild.name} (ID: ${guild.id})`);
-        guild.leave()
-            .then(g => console.log(`サーバーを退出しました: ${g.name} (ID: ${g.id})`))
-            .catch(console.error);
-    } else {
-        console.log(`許可されたサーバーに追加されました: ${guild.name} (ID: ${guild.id})`);
-    }
-});
 
 process.on("uncaughtException", (error) => {
   console.error("未処理の例外:", error);
