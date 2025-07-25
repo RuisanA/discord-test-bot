@@ -42,13 +42,16 @@ dotenv.config();
 const express = require("express");
 const app = express();
 
-app.get("/", (req, res) => res.send("Bot is alive!"));
+app.use(express.json());
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`Web server running on port ${PORT}`);
+app.post("/", (req, res) => {
+  console.log("Wake-up ping received:", req.body);
+  res.status(200).send("OK");
 });
 
+app.get("/", (req, res) => {
+  res.send("Server is awake");
+});
 
 const admin_list = ["983317416283086909"]
 
